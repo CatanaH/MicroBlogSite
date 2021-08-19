@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/app.css">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>This is the Home page</h1>
+    <a href="/new">Create</a>
+    <ul>
+        <% for(let com of comments) { %>
+            <li>
+                <b><h2><%= com.username %> </h2></b>
+                <p><%= com.comment %></p>
+                <a href="/detail/<%= com.id %>">detailed view</a>
+            </li>
+        <% } %> 
+    </ul>
+    
+</body>
+</html>

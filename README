@@ -1,0 +1,4 @@
+micro blogging site built with Express.js to practice CRUD architecture. 
+Uses 'ejs' for templating
+
+run with 'node index.js'

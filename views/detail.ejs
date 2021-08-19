@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail View</title>
+</head>
+<body>
+    <h1>This is the detailed view of the post</h1>
+    <h2>this is the ID: <%= com.id %> </h2>
+    <h2><%= com.comment %> </h2>
+    <h3>By: <%= com.username %> </h3>
+    <a href="/">Back</a>
+    <a href="/<%= com.id %>/edit">Edit</a>
+    <form method="POST" action="/<%= com.id %>?_method=DELETE">
+        <button>Delete Post</button>
+    </form>
+    
+</body>
+</html>
